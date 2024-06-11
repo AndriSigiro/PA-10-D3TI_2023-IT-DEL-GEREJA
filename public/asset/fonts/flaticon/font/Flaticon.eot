@@ -1,0 +1,6 @@
+@font-face{
+    font-family: "Flaticon";
+    src: url("../fonts/flaticon/font/Flaticon.eot");
+    font-weight: normal;
+    font-style: normal;
+}

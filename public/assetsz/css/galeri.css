@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Foldit&family=Kanit&family=Playfair+Display&family=Rubik+80s+Fade&family=Tilt+Prism&display=swap');
+
+.card-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Untuk membuat teks berada di tengah horizontal */
+    height: 100%; /* Menyesuaikan tinggi card */
+    color: blue;
+}
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card .card-body .image-date {
+    opacity: 0; /* Mulai dengan mengatur opasitas menjadi 0 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    transition: opacity 0.5s ease, filter 0.5s ease; /* Animasi transisi untuk opasitas dan filter */
+    filter: blur(10px); /* Mulai dengan memberikan efek blur */
+}
+
+.card:hover .image-date {
+    opacity: 1; /* Tampilkan tanggal dengan meningkatkan opasitas */
+    filter: blur(0); /* Hilangkan efek blur */
+}
